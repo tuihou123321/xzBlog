@@ -3,7 +3,7 @@
 node 13.js -weather shanghai
 node 13.js -w shanghai
 * */
-const util =require('./public/public');
+const util =require('./static/js/public');
 const axios = require('axios');
 
 let paramsObj=util.getArrParams()
