@@ -4,7 +4,7 @@
 var http=require('http')
 var fs=require('fs')
 
-// 创建一个本地服务器,127.0.0.1.txt:3000
+// 创建一个本地服务器,127.0.0.1.md.txt:3000
 http.createServer((req,res)=>{
     var mp3='./static/files/01.mp3'
     var stat=fs.statSync(mp3)
@@ -19,4 +19,4 @@ http.createServer((req,res)=>{
     // 管道pipe流入
     readableStream.pipe(res);
 }).listen(3000)
-console.log('服务器运行在 127.0.0.1.txt:3000端口')
+console.log('服务器运行在 127.0.0.1.md.txt:3000端口')
